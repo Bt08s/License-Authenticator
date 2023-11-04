@@ -80,7 +80,7 @@ with dpg.window(label="Login / Register" ,tag="Authentication", width=600, heigh
     with dpg.popup(dpg.last_item(), modal=True, tag="popup_false_register"):
         dpg.add_text("Register failed")
 
-dpg.create_viewport(title='Authenticator by Bt08', width=600, height=200)
+dpg.create_viewport(title='Authenticator by Bt08s', width=600, height=200)
 dpg.setup_dearpygui()
 dpg.show_viewport()
 dpg.set_primary_window("Primary Window", True)
