@@ -56,7 +56,7 @@ def register():
         dpg.show_item("popup_false_register")
 
 
-with dpg.window(tag="Primary Window", no_resize=True):
+with dpg.window(tag="Premium window", no_resize=True):
     dpg.add_text("Welcome.")
 
 with dpg.window(label="Login / Register" ,tag="Authentication", width=600, height=250, no_resize=True, no_close=True, no_collapse=True, no_move=True):
@@ -83,6 +83,6 @@ with dpg.window(label="Login / Register" ,tag="Authentication", width=600, heigh
 dpg.create_viewport(title='Authenticator by Bt08s', width=600, height=200)
 dpg.setup_dearpygui()
 dpg.show_viewport()
-dpg.set_primary_window("Primary Window", True)
+dpg.set_primary_window("Premium window", True)
 dpg.start_dearpygui()
 dpg.destroy_context()
