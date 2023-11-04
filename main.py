@@ -5,7 +5,7 @@ import sys
 
 dpg.create_context()
 
-owner = "Bt08"
+owner = "Bt08s"
 
 
 def checksum():
@@ -59,7 +59,7 @@ def register():
 with dpg.window(tag="Premium window", no_resize=True):
     dpg.add_text("Welcome.")
 
-with dpg.window(label="Login / Register" ,tag="Authentication", width=600, height=250, no_resize=True, no_close=True, no_collapse=True, no_move=True):
+with dpg.window(label="Login / Register", tag="Authentication", width=600, height=250, no_resize=True, no_close=True, no_collapse=True, no_move=True):
     dpg.add_input_text(label="Username", tag="username")
     dpg.add_input_text(label="Password", tag="password")
     dpg.add_input_text(label="License", tag="license_key")
