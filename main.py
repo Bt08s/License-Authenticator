@@ -63,8 +63,8 @@ with dpg.window(label="Login / Register", tag="Authentication", width=600, heigh
     dpg.add_input_text(label="Username", tag="username")
     dpg.add_input_text(label="Password", tag="password")
     dpg.add_input_text(label="License", tag="license_key")
-    with dpg.popup(dpg.last_item()):
-        dpg.add_text(f"Buy? {owner}")
+    with dpg.tooltip(dpg.last_item()):
+         dpg.add_text(f"Buy? msg {owner}")
     dpg.add_button(label="Login", callback=login, width=100)
     dpg.add_button(label="Register", callback=register, width=100)
 
