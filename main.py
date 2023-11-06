@@ -17,10 +17,10 @@ def checksum():
 
 
 client = Keyauth(
-    name="App",
-    owner_id="PcHoErgz5V",
-    secret="52337d5585661df0ef8fe765bd660f51ac07f8ab9f3243593b153156e520973a",
-    version="1.0",
+    name="",
+    owner_id="",
+    secret="",
+    version="",
     file_hash=checksum()
 )
 
@@ -80,7 +80,20 @@ with dpg.window(label="Login / Register", tag="Authentication", width=600, heigh
     with dpg.popup(dpg.last_item(), modal=True, tag="popup_false_register"):
         dpg.add_text("Register failed")
 
-dpg.create_viewport(title='Authenticator by Bt08s', width=600, height=200)
+with dpg.theme() as global_theme:
+    with dpg.theme_component(dpg.mvAll):
+        dpg.add_theme_style(dpg.mvStyleVar_WindowRounding, 3)
+        dpg.add_theme_style(dpg.mvStyleVar_FrameRounding, 3)
+        dpg.add_theme_style(dpg.mvStyleVar_GrabRounding, 3)
+        dpg.add_theme_style(dpg.mvStyleVar_TabRounding, 3)
+        dpg.add_theme_style(dpg.mvStyleVar_ChildRounding, 3)
+        dpg.add_theme_style(dpg.mvStyleVar_PopupRounding, 3)
+        dpg.add_theme_style(dpg.mvStyleVar_ScrollbarRounding, 3)
+        dpg.add_theme_style(dpg.mvStyleVar_FramePadding, 4, 4)
+        dpg.add_theme_style(dpg.mvStyleVar_ItemSpacing, 5, 5)
+
+dpg.bind_theme(global_theme)
+dpg.create_viewport(title='Authenticator by Bt08s', width=617, height=290)
 dpg.setup_dearpygui()
 dpg.show_viewport()
 dpg.set_primary_window("Premium window", True)
