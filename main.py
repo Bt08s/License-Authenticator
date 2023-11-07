@@ -59,7 +59,7 @@ with dpg.window(tag="Premium window", no_resize=True):
 
 with dpg.window(label="Login / Register", tag="Authentication", width=600, height=250, no_resize=True, no_close=True, no_collapse=True, no_move=True):
     dpg.add_input_text(label="Username", tag="username")
-    dpg.add_input_text(label="Password", tag="password")
+    dpg.add_input_text(label="Password", tag="password", password=True)
     dpg.add_input_text(label="License", tag="license_key")
     with dpg.tooltip(dpg.last_item()):
          dpg.add_text(f"Buy? Contact with owner.")
