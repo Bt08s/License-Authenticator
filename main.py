@@ -81,7 +81,7 @@ with dpg.window(label="Login / Register", tag="Authentication", width=600, heigh
 with dpg.theme() as global_theme:
     with dpg.theme_component(dpg.mvAll):
         dpg.add_theme_style(dpg.mvStyleVar_WindowRounding, 5)
-        dpg.add_theme_style(dpg.mvStyleVar_FrameRounding, 5)
+        dpg.add_theme_style(dpg.mvStyleVar_FrameRounding,4)
         dpg.add_theme_style(dpg.mvStyleVar_GrabRounding, 5)
         dpg.add_theme_style(dpg.mvStyleVar_TabRounding, 5)
         dpg.add_theme_style(dpg.mvStyleVar_ChildRounding, 5)
