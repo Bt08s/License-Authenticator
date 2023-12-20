@@ -80,15 +80,20 @@ with dpg.window(label="Login / Register", tag="Authentication", width=600, heigh
 
 with dpg.theme() as global_theme:
     with dpg.theme_component(dpg.mvAll):
-        dpg.add_theme_style(dpg.mvStyleVar_WindowRounding, 3)
-        dpg.add_theme_style(dpg.mvStyleVar_FrameRounding, 3)
-        dpg.add_theme_style(dpg.mvStyleVar_GrabRounding, 3)
-        dpg.add_theme_style(dpg.mvStyleVar_TabRounding, 3)
-        dpg.add_theme_style(dpg.mvStyleVar_ChildRounding, 3)
-        dpg.add_theme_style(dpg.mvStyleVar_PopupRounding, 3)
-        dpg.add_theme_style(dpg.mvStyleVar_ScrollbarRounding, 3)
-        dpg.add_theme_style(dpg.mvStyleVar_FramePadding, 4, 4)
+        dpg.add_theme_style(dpg.mvStyleVar_WindowRounding, 5)
+        dpg.add_theme_style(dpg.mvStyleVar_FrameRounding, 5)
+        dpg.add_theme_style(dpg.mvStyleVar_GrabRounding, 5)
+        dpg.add_theme_style(dpg.mvStyleVar_TabRounding, 5)
+        dpg.add_theme_style(dpg.mvStyleVar_ChildRounding, 5)
+        dpg.add_theme_style(dpg.mvStyleVar_PopupRounding, 5)
+        dpg.add_theme_style(dpg.mvStyleVar_ScrollbarRounding, 5)
+        dpg.add_theme_style(dpg.mvStyleVar_FramePadding, 5, 5)
         dpg.add_theme_style(dpg.mvStyleVar_ItemSpacing, 5, 5)
+
+        dpg.add_theme_color(dpg.mvThemeCol_WindowBg, (21, 22, 23))
+        dpg.add_theme_color(dpg.mvThemeCol_FrameBg, (32, 50, 77))
+        dpg.add_theme_color(dpg.mvThemeCol_Button, (39, 73, 114))
+        dpg.add_theme_color(dpg.mvThemeCol_FrameBg, (32, 50, 77))
 
 dpg.bind_theme(global_theme)
 dpg.create_viewport(title='Authenticator by Bt08s', width=617, height=290)
